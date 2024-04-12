@@ -1,0 +1,60 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    /* Optional: Set a height for the container */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #150505;
+    /* Optional: Set background color for the header */
+    width: 100%;
+    padding: 20px;
+    /* Adjust padding as needed */
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content {
+    text-align: center;
+    /* Optional: Center align content */
+    margin-top: 20px;
+    /* Adjust margin as needed */
+}
+
+.linkContainer {
+    margin-bottom: 10px;
+    /* Adjust margin as needed */
+    border: 5px solid #fff;
+    /* White border with 2px width */
+    padding: 20px;
+    /* Optional: Add padding inside the border */
+    color: #fff;
+    /* Text color inside the link container */
+    text-decoration: none;
+    /* Remove underline from the link */
+}
+
+.linkContainer:hover {
+    background-color: #fff;
+    /* Change background color on hover */
+    color: #000;
+    /* Change text color on hover */
+}
+
+.videoPlayer {
+    width: 100%;
+    max-width: 100px;
+    /* Set max width for the video player */
+    margin-bottom: 10px;
+    /* Adjust margin as needed */
+}

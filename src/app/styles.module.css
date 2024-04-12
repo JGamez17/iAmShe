@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Set the container height to the full viewport height */
+}
+
+.black-background {
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+    /* Ensure the black background covers the entire viewport */
+}
+
+.enterButton {
+    background-color: #000000;
+    /* White background for the button */
+    color: #FF69B4;
+    /* Black text color for the button */
+    padding: 50px 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    align-items: center;
+    /* Add some space between the image and the button */
+}
+
+.imageContainer {
+    position: relative;
+    width: 500px;
+    /* Adjust as needed */
+    height: 300px;
+    /* Adjust as needed */
+}
+
+.linkContainer {
+    position: absolute;
+    top: 70%;
+    /* Adjust to vertically center the link */
+    left: 55%;
+    /* Adjust to horizontally center the link */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* Ensure the link appears above the image */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #007bff;
+    /* Change the background color as needed */
+    color: #fff;
+    /* Change the text color as needed */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
