@@ -1,7 +1,8 @@
 'use client'
-import React, { FormEvent, useState, } from 'react';
+import React, { FormEvent, useState } from 'react';
 
-const AskShe = () => {
+export const AskShe = () => {
+    const [isSubmitted, setSubmitted] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -21,18 +22,23 @@ const AskShe = () => {
                     'content-type': 'application/json',
                 },
             });
-            if (res.ok) {
-                const result = await res.json();
-                console.log(result);
+            if (res.status === 200) {
+                setSubmitted(true);
             } else {
-                console.error('Error:', res.statusText);
+                console.error("Error:", res.statusText);
             }
         } catch (err) {
-            console.error('Error:', err);
+            console.error('API Error:', err);
         }
+
     };
 
-    return (
+    return isSubmitted ? (
+        <div>
+            <h1 className="text-center font-semibold text-3xl text-black">
+                Thank you for your message!</h1>
+        </div>
+    ) : (
         <div className="bg-black min-h-screen flex flex-col items-center justify-center">
             <h3 className="text-3xl md:text-4xl font-bold text-white mt-20 mb-8">
                 Ask She - Questions, Comments, Concerns, please submit below
@@ -69,7 +75,7 @@ const AskShe = () => {
                 </div>
                 <button className="btn btn-primary" type="submit">Submit</button>
             </form>
-        </div >
+        </div>
     );
 };
 
