@@ -1,7 +1,7 @@
 'use client'
 import React, { FormEvent, useState } from 'react';
 
-export const AskShe = () => {
+const AskShe = () => {
     const [isSubmitted, setSubmitted] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
