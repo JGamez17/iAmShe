@@ -1,5 +1,6 @@
 'use client'
-import React, { FormEvent, useState } from 'react';
+import React, { FormEvent, useState } from 'react'
+import styles from './styles.module.css';
 
 const AskShe = () => {
     const [isSubmitted, setSubmitted] = useState(false);
@@ -7,7 +8,7 @@ const AskShe = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const onSubmit = async (e: FormEvent) => {
+    const onSubmit = async (e) => {
         e.preventDefault();
         try {
             const res = await fetch('https://api.web3forms.com/submit', {
@@ -30,17 +31,17 @@ const AskShe = () => {
         } catch (err) {
             console.error('API Error:', err);
         }
-
     };
 
     return isSubmitted ? (
         <div>
             <h1 className="text-center font-semibold text-3xl text-black">
-                Thank you for your message!</h1>
+                Thank you for your message!
+            </h1>
         </div>
     ) : (
-        <div className="bg-black min-h-screen flex flex-col items-center justify-center">
-            <h3 className="text-3xl md:text-4xl font-bold text-white mt-20 mb-8">
+        <div>
+            <h3 className={styles.formLink} >
                 Ask She - Questions, Comments, Concerns, please submit below
             </h3>
             <form onSubmit={onSubmit} className="form-container flex flex-col gap-8">
@@ -79,4 +80,4 @@ const AskShe = () => {
     );
 };
 
-export default AskShe;
+export default AskShe; 

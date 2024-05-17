@@ -14,11 +14,6 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
         icon: <Icon icon="lucide:folder" width="24" height="24" />,
     },
     {
-        title: 'AskShe',
-        path: '/askshe',
-        icon: <Icon icon="lucide:mail" width="24" height="24" />,
-    },
-    {
         title: 'Podcast',
         path: '/podcast',
         icon: <Icon icon="lucide:settings" width="24" height="24" />,

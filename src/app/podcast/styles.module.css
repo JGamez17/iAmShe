@@ -7,6 +7,10 @@
     height: 100vh;
     /* Ensures the container takes up the full viewport height */
     background-color: black;
+    color: blueviolet;
+    margin-bottom: 20px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .header {
@@ -16,8 +20,10 @@
     background-color: #150505;
     /* Optional: Set background color for the header */
     width: 100%;
-    padding: 20px;
+    padding: 60px;
     /* Adjust padding as needed */
+    font-size: xx-large;
+    margin-top: 0;
 }
 
 .logo {
@@ -26,6 +32,7 @@
 }
 
 .linkContainer {
+    margin-top: 60px;
     margin-bottom: 10px;
     /* Adjust margin as needed */
     border: 5px solid #fff;
@@ -40,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .linkContainer:hover {
@@ -47,6 +55,8 @@
     /* Change background color on hover */
     color: #000;
     /* Change text color on hover */
+
+    margin-bottom: 90px;
 }
 
 .videoPlayer {
@@ -57,6 +67,27 @@
     /* Add space between video player and link container */
 }
 
-.footer-title {
+.headerTitle {
     color: blueviolet;
+    padding: "500px";
+    margin-bottom: 20px;
+}
+
+.customLink {
+    margin-bottom: 20px;
+    /* Other styles for your link */
+    display: 'flex',
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin-right: 90px;
+    /* Adjust spacing between columns */
 }
