@@ -8,7 +8,7 @@ const AskShe = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const onSubmit = async (e) => {
+    const onSubmit = async (e: FormEvent) => {
         e.preventDefault();
         try {
             const res = await fetch('https://api.web3forms.com/submit', {
