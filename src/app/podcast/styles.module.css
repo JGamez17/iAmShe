@@ -7,7 +7,7 @@
     height: 100vh;
     /* Ensures the container takes up the full viewport height */
     background-color: black;
-    color: blueviolet;
+    color: goldenrod;
     margin-bottom: 20px;
     font-size: large;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #150505;
+    /* background-color: #150505; */
     /* Optional: Set background color for the header */
     width: 100%;
     padding: 60px;
@@ -39,7 +39,7 @@
     /* White border with 5px width */
     padding: 20px;
     /* Optional: Add padding inside the border */
-    color: blueviolet;
+    color: goldenrod;
     /* Text color inside the link container */
     text-decoration: none;
     /* Remove underline from the link */
@@ -55,8 +55,9 @@
     /* Change background color on hover */
     color: #000;
     /* Change text color on hover */
-
     margin-bottom: 90px;
+    padding: 20px;
+
 }
 
 .videoPlayer {
@@ -68,7 +69,7 @@
 }
 
 .headerTitle {
-    color: blueviolet;
+    color: goldenrod;
     padding: "500px";
     margin-bottom: 20px;
 }
@@ -84,6 +85,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .column {
