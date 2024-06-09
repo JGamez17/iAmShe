@@ -14,7 +14,7 @@ const About = () => {
                         src="/profilepic3.png"
                         alt="Profile Picture"
                         width={500}
-                        height={500}
+                        height={300}
                     />
                 </div>
             </div>
