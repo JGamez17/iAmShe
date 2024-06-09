@@ -15,12 +15,12 @@
     align-items: center;
     display: flexbox;
     padding: 20px;
-    width: 200px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
 }
 
 .about-image img {
-    display: flex;
+    display: flexbox;
     border-radius: 50%;
     padding: 20px;
     width: 90px;
@@ -35,5 +35,5 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 60px
+    padding: 20px
 }
