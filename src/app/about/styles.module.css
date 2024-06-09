@@ -10,14 +10,13 @@
 .about-content {
     color: black;
     max-width: 100%;
-    /* justify-content: center;
+    /* /* justify-content: center; */
     align-items: center;
     display: flex;
     padding: 20px;
-    width: 500px; */
-    /* Adjust the size as needed */
+    width: 500px;
     height: 500px;
-    /* display: flex; */
+    display: flex;
 }
 
 .about-image img {
