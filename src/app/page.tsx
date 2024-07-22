@@ -12,6 +12,11 @@ export default function Home() {
           width={500}
           height={300}
         />
+        <div className={styles.paragraphContainer}>
+          <p className={styles.paragraph}> "She is a storm with skin" </p>
+        </div>
+
+
       </div>
       <div className={`${styles.linkContainer} form-container flex flex-col gap-8 justify-center items-center`}>
         <Link href="/about"> <button className="btn btn-outline btn-secondary">ENTER</button>

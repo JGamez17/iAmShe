@@ -1,31 +1,29 @@
-.about-section {
-    text-align: center;
-    color: #FF69B4;
-    display: flex;
-    align-items: normal;
-    justify-content: space-evenly;
-    background-color: rgb(14, 10, 15);
-    padding: 20px;
-}
-
 .about-content {
-    color: black;
-    max-width: 100%;
+    display: flex;
+    font-size: x-large;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    max-width: 90%;
     justify-content: center;
     align-items: center;
     display: flexbox;
-    padding: 20px;
-    width: 500px;
-    height: 500px;
+    width: 1000px;
+    /* 1000px */
+    height: 320px;
 }
 
-.about-image img {
-    display: flexbox;
-    border-radius: 50%;
-    padding: 20px;
-    width: 90px;
-    height: 60px;
-    object-fit: cover;
-    align-items: center;
+.pageContainer {
+    display: flex;
+    background-color: black;
+    color: #FF69B4;
+    flex-direction: column;
+    /* Stack items vertically */
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Ensures the container takes up the full viewport height */
+    margin-bottom: 20px;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

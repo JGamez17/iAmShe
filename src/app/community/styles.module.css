@@ -1,0 +1,56 @@
+.container {
+    min-height: 100vh;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    margin-top: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #FF69B4;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 5rem 0;
+}
+
+.flyer {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem 0;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flyer p {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: whitesmoke;
+}
+
+.flyer a {
+    font-size: 1.5rem;
+    color: #FF69B4;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.flyer a:hover {
+    color: #FF69B4;
+}

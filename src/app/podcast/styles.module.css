@@ -1,95 +1,50 @@
+/* body,
+html {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+} */
+
 .pageContainer {
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* Ensures the container takes up the full viewport height */
     background-color: black;
-    color: goldenrod;
-    margin-bottom: 20px;
-    font-size: large;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #150505; */
-    /* Optional: Set background color for the header */
-    width: 100%;
-    padding: 60px;
-    /* Adjust padding as needed */
-    font-size: xx-large;
-    margin-top: 0;
-}
-
-.logo {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.linkContainer {
-    margin-top: 60px;
-    margin-bottom: 10px;
-    /* Adjust margin as needed */
-    border: 5px solid #fff;
-    /* White border with 5px width */
-    padding: 20px;
-    /* Optional: Add padding inside the border */
-    color: goldenrod;
-    /* Text color inside the link container */
-    text-decoration: none;
-    /* Remove underline from the link */
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.linkContainer:hover {
-    background-color: #fff;
-    /* Change background color on hover */
-    color: #000;
-    /* Change text color on hover */
-    margin-bottom: 90px;
-    padding: 20px;
-
-}
-
-.videoPlayer {
-    width: 100%;
-    max-width: 800px;
-    /* Set max width for the video player */
-    margin-bottom: 20px;
-    /* Add space between video player and link container */
-}
-
-.headerTitle {
-    color: goldenrod;
-    padding: "500px";
-    margin-bottom: 20px;
-}
-
-.customLink {
-    margin-bottom: 20px;
-    /* Other styles for your link */
-    display: 'flex',
 }
 
 .container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: black;
 }
 
-.column {
-    flex: 1;
-    margin-right: 90px;
-    /* Adjust spacing between columns */
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: goldenrod;
+}
+
+.customLink {
+    margin-top: 10px;
+    color: goldenrod;
+}
+
+.linkContainer {
+    display: block;
+    margin-top: 10px;
+    color: goldenrod;
+}
+
+.rightSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: goldenrod;
+    background-color: black;
 }

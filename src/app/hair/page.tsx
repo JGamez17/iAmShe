@@ -8,7 +8,7 @@ const HairLink = () => {
         <div className={styles.pageContainer}>
             <header className={styles.header}>
                 <Image
-                    src="/iAmSheHair.png"
+                    src="/Hair2.png"
                     alt="Picture of the author"
                     width={700} // Adjust the width as needed
                     height={900} // Adjust the height as needed
