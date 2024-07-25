@@ -1,14 +1,6 @@
-/* body,
-html {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-} */
-
 .pageContainer {
     display: flex;
+    margin-top: 10px;
     flex-direction: column;
     align-items: center;
     background-color: black;
@@ -17,21 +9,22 @@ html {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
-    margin-top: 20px;
+    height: 100vh;
+    margin-top: 100px;
     background-color: black;
 }
 
 .leftSide {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     color: goldenrod;
 }
 
 .customLink {
-    margin-top: 10px;
+    margin-top: 20px;
     color: goldenrod;
 }
 
@@ -42,7 +35,6 @@ html {
 }
 
 .rightSide {
-    display: flex;
     justify-content: center;
     align-items: center;
     color: goldenrod;

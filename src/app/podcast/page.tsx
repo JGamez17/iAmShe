@@ -1,9 +1,23 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import Image from 'next/image';
-import AskShe from '../askshe/page';
+import dynamic from 'next/dynamic';
+
+// Dynamically import AskShe to avoid hydration error
+const AskShe = dynamic(() => import('../askshe/page'), { ssr: false });
 
 const ExternalLinkExample = () => {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    if (!isMounted) {
+        return null; // or a loading spinner
+    }
+
     return (
         <div className={styles.pageContainer}>
             <Image
