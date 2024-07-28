@@ -13,7 +13,7 @@ export default function Home() {
           height={300}
         />
         <div className={styles.paragraphContainer}>
-          <p className={styles.paragraph}> "She is a storm with skin" </p>
+          <p className={styles.paragraph}>&quot;She is a storm with skin&quot;</p>
         </div>
       </div>
       <div className={`${styles.linkContainer} form-container flex flex-col gap-8 justify-center items-center`}>
