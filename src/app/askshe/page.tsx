@@ -74,7 +74,7 @@ const AskShe = () => {
                         placeholder="Enter your message"
                     ></textarea>
                 </div>
-                <button className="btn btn-primary" type="submit">Submit</button>
+                <button className={`${styles.submitButton} btn btn-outline btn-warning`}>Submit</button>
             </form>
         </div>
     );
