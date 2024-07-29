@@ -6,7 +6,7 @@ const About = () => {
         <div className={styles.pageContainer}>
             <header><h2>&apos;SHē&apos; - referred to a Woman.</h2></header>
             <div className="avatar">
-                <div className="w-25 rounded-full">
+                <div className="w-24 rounded-full">
                     <Image
                         src="/profilepic3.png"
                         alt="Profile Picture"

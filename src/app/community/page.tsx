@@ -22,7 +22,7 @@ export default function Home() {
             </header>
 
             <div className="avatar">
-                <div className="w-70 rounded-xl">
+                <div className="w-12">
                     <Image
                         src="/flyer.png"
                         alt="back to school drive"
